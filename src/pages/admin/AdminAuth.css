@@ -1,0 +1,391 @@
+/* ====================================================
+   ADMIN AUTHENTICATION STYLES (CIVICSHIELD AI SENTINEL OS)
+   Cyber-grade glassmorphism, secure authentication portal
+   ==================================================== */
+
+.admin-auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: radial-gradient(circle at 50% 20%, #0a1b2e 0%, #040914 100%);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #f1f5f9;
+}
+
+.admin-auth-glow-one {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.admin-auth-glow-two {
+  position: absolute;
+  bottom: -150px;
+  left: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* TOP BRAND BAR */
+.admin-auth-nav {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  right: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.admin-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.admin-brand-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.3), rgba(2, 132, 199, 0.5));
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  display: grid;
+  place-items: center;
+  color: #38bdf8;
+  box-shadow: 0 0 14px rgba(14, 165, 233, 0.3);
+}
+
+.admin-brand-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.admin-brand-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: #38bdf8;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.admin-exit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.admin-exit-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* AUTH CONTAINER & CARD */
+.admin-card-wrapper {
+  width: 100%;
+  max-width: 480px;
+  z-index: 5;
+  margin-top: 40px;
+}
+
+.admin-card-wrapper.wide {
+  max-width: 580px;
+}
+
+.admin-auth-card {
+  background: rgba(8, 18, 32, 0.85);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 18px;
+  padding: 36px 32px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* CARD HEADER */
+.admin-card-header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.admin-shield-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.25), rgba(14, 165, 233, 0.1));
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  display: grid;
+  place-items: center;
+  color: #38bdf8;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+}
+
+.admin-security-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.admin-card-header h1 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 8px;
+  letter-spacing: 0.01em;
+}
+
+.admin-card-header p {
+  color: #94a3b8;
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ERROR / SUCCESS ALERTS */
+.admin-alert-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.admin-alert-banner.error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.admin-alert-banner.success {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  color: #86efac;
+}
+
+/* FORM ELEMENTS */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.admin-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.admin-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-field-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #cbd5e1;
+  letter-spacing: 0.01em;
+}
+
+.admin-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.admin-field-icon {
+  position: absolute;
+  left: 12px;
+  color: #64748b;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 11px 12px 11px 38px;
+  border-radius: 9px;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 0 16px rgba(14, 165, 233, 0.25);
+}
+
+.admin-input:focus + .admin-field-icon,
+.admin-input-wrap:focus-within .admin-field-icon {
+  color: #38bdf8;
+}
+
+.admin-select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+.admin-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.35);
+  transition: all 0.2s ease;
+}
+
+.admin-submit-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+  box-shadow: 0 6px 24px rgba(14, 165, 233, 0.5);
+  transform: translateY(-1px);
+}
+
+.admin-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* FOOTER LINKS */
+.admin-card-footer {
+  text-align: center;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.admin-card-footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.admin-card-footer a:hover {
+  text-decoration: underline;
+}
+
+.admin-auth-security-notice {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+@media (max-width: 600px) {
+  .admin-form-row {
+    grid-template-columns: 1fr;
+  }
+  .admin-auth-card {
+    padding: 28px 20px;
+  }
+  .admin-auth-nav {
+    top: 16px;
+    left: 16px;
+    right: 16px;
+  }
+}
+
+
+
+/* TOP NAV ACTIONS GROUP */
+.admin-nav-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-exit-btn.highlight {
+  background: rgba(14, 165, 233, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.admin-exit-btn.highlight:hover {
+  background: rgba(14, 165, 233, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.admin-footer-sublinks {
+  margin-bottom: 12px;
+}
+
+.admin-footer-citizen-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #94a3b8;
+  font-size: 12.5px;
+  transition: color 0.2s;
+}
+
+.admin-footer-citizen-link a:hover {
+  color: #38bdf8;
+}

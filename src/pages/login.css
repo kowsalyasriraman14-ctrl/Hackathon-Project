@@ -1,0 +1,48 @@
+/* ====================================================
+   LOGIN PAGE - HIGH-TECH SECURITY THEME
+   Typography: Sora (Cybersecurity & Trust UI)
+==================================================== */
+@import "./signup.css";
+
+.login-page,
+.login-page input,
+.login-page button,
+.login-page label,
+.login-page select {
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.login-page h1,
+.login-page .auth-logo {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.login-page .auth-subtitle {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.login-page .auth-submit-btn {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.login-container {
+  min-height: calc(100vh - 75px);
+}
+
+.login-card {
+  max-width: 440px;
+}
+
+.login-card .auth-subtitle {
+  margin-bottom: 35px;
+}
+
+.login-card .auth-input-group {
+  margin-bottom: 23px;
+}

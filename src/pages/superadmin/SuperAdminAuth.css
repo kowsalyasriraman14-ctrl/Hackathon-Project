@@ -1,0 +1,439 @@
+/* =========================================================================
+   SUPER ADMIN AUTHENTICATION STYLES (CRIMSON & GOLD APEX EXECUTIVE THEME)
+   ========================================================================= */
+
+.superadmin-auth-page {
+  min-height: 100vh;
+  background: #050b14;
+  color: #f8fafc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 20px 40px;
+}
+
+.superadmin-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  mix-blend-mode: screen;
+}
+
+.superadmin-glow-orb.orb-red {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.45), transparent 70%);
+  top: -10%;
+  left: 15%;
+  animation: orbRed 18s ease-in-out infinite alternate;
+}
+
+.superadmin-glow-orb.orb-gold {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.35), transparent 70%);
+  bottom: -10%;
+  right: 15%;
+  animation: orbGold 22s ease-in-out infinite alternate;
+}
+
+@keyframes orbRed {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(80px, 60px) scale(1.15); }
+}
+
+@keyframes orbGold {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-60px, -80px) scale(1.12); }
+}
+
+/* TOP BAR */
+.superadmin-auth-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  padding: 0 clamp(16px, 3.5vw, 36px);
+  background: rgba(6, 13, 23, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(239, 68, 68, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.superadmin-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.superadmin-brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.3), rgba(245, 158, 11, 0.3));
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fbbf24;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+}
+
+.superadmin-brand-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.superadmin-brand-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: #ef4444;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.superadmin-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.superadmin-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.superadmin-nav-btn:hover {
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+}
+
+.superadmin-nav-btn.highlight {
+  background: rgba(14, 165, 233, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.superadmin-nav-btn.secondary {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #f87171;
+  font-weight: 700;
+}
+
+/* CARD CONTAINER */
+.superadmin-card-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.superadmin-card-wrapper.wide {
+  max-width: 760px;
+}
+
+.superadmin-auth-card {
+  background: rgba(10, 18, 32, 0.88);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1.5px solid rgba(239, 68, 68, 0.35);
+  border-radius: 20px;
+  padding: clamp(28px, 4vw, 42px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(239, 68, 68, 0.2);
+}
+
+.superadmin-card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.superadmin-crown-badge {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.25), rgba(245, 158, 11, 0.25));
+  border: 1.5px solid rgba(245, 158, 11, 0.5);
+  display: grid;
+  place-items: center;
+  color: #fbbf24;
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+}
+
+.superadmin-security-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #f87171;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.superadmin-card-header h1 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: clamp(22px, 2.5vw, 28px);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 8px;
+  letter-spacing: 0.01em;
+}
+
+.superadmin-card-header p {
+  color: #94a3b8;
+  font-size: 13.5px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* DEMO BOX */
+.superadmin-demo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px dashed rgba(245, 158, 11, 0.35);
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.superadmin-demo-box .demo-text {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #fde68a;
+  font-weight: 600;
+}
+
+.demo-autofill-btn {
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: #f59e0b;
+  color: #050b14;
+  font-size: 11.5px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.demo-autofill-btn:hover {
+  background: #fbbf24;
+  transform: translateY(-1px);
+}
+
+/* ALERTS */
+.superadmin-alert-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.superadmin-alert-banner.error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+}
+
+.superadmin-alert-banner.success {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
+}
+
+/* FORM */
+.superadmin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.superadmin-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 650px) {
+  .superadmin-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.superadmin-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.superadmin-field-group label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #cbd5e1;
+  letter-spacing: 0.02em;
+}
+
+.superadmin-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.superadmin-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 40px 0 14px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 13.5px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.superadmin-input:focus {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.25);
+}
+
+.superadmin-field-icon {
+  position: absolute;
+  right: 14px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.superadmin-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  margin-top: 6px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #dc2626, #f59e0b);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.superadmin-submit-btn:hover {
+  background: linear-gradient(135deg, #b91c1c, #d97706);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.5);
+}
+
+.superadmin-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* FOOTER */
+.superadmin-card-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.superadmin-footer-sublinks {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.superadmin-footer-sublinks a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.superadmin-footer-sublinks a:hover {
+  text-decoration: underline;
+}
+
+.superadmin-footer-cross-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.superadmin-footer-cross-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #64748b;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.superadmin-footer-cross-links a:hover {
+  color: #38bdf8;
+}
+
+.superadmin-auth-security-notice {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+

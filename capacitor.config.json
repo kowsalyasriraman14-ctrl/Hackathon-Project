@@ -1,0 +1,21 @@
+{
+  "appId": "com.civicshield.app",
+  "appName": "CivicShield AI",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#060f1b",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#060f1b"
+    }
+  }
+}
+

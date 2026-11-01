@@ -1,0 +1,395 @@
+/* ====================================================
+   DEVELOPER-STYLE DASHBOARD TOPBAR (CIVICSHIELD AI)
+   Glassmorphic translucent bar, monospace breadcrumbs, status pill
+==================================================== */
+
+.dash-glass-topbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 80 !important;
+  height: 74px;
+  padding: 0 clamp(16px, 3.5vw, 36px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(24px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 4px 20px -2px rgba(16, 43, 69, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.25s ease;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dash-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.dash-menu-toggle-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.dash-menu-toggle-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.dash-menu-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.dash-topbar-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  background: rgba(241, 245, 249, 0.9);
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  min-height: 36px;
+}
+
+.dash-topbar-back-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+.dash-topbar-back-btn:active {
+  transform: scale(0.96);
+}
+
+/* MONOSPACE DEVELOPER BREADCRUMBS */
+.dash-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dash-bread-root {
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.dash-bread-sep {
+  color: #cbd5e1;
+}
+
+.dash-bread-mod {
+  color: #475569;
+  font-weight: 600;
+}
+
+.dash-bread-active {
+  color: #0f172a;
+  font-weight: 700;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* TOPBAR RIGHT */
+.dash-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* QUICK DIRECT NAVIGATION LINKS IN DASHBOARD TOPBAR */
+.dash-quick-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-quick-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dash-quick-link:hover {
+  background: #f0f9ff;
+  border-color: #7dd3fc;
+  color: #0284c7;
+  transform: translateY(-1px);
+}
+
+.dash-quick-link.active {
+  background: rgba(14, 165, 233, 0.12);
+  border-color: #38bdf8;
+  color: #0284c7;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .dash-quick-nav {
+    display: none;
+  }
+}
+
+/* REAL-TIME SYSTEM STATUS PILL */
+.dash-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #166534;
+  letter-spacing: 0.04em;
+}
+
+.dash-pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+  box-shadow: 0 0 8px #22c55e;
+  animation: pulseDotGreen 2s infinite;
+}
+
+@keyframes pulseDotGreen {
+  0% { transform: scale(0.95); opacity: 0.9; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.9; }
+}
+
+/* RAISE COMPLAINT ACTION BUTTON */
+.dash-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #0284c7, #0ea5e9);
+  color: #ffffff;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 38px;
+  white-space: nowrap;
+}
+
+.dash-action-btn:hover {
+  background: linear-gradient(135deg, #0369a1, #0284c7);
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.4);
+  transform: translateY(-1px);
+}
+
+.dash-action-btn:active {
+  transform: scale(0.97);
+}
+
+/* USER IDENTITY BADGE (NO LOGOUT BUTTON) */
+.dash-user-badge {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 12px 4px 5px;
+  border-radius: 26px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.dash-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0284c7, #0d9488);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 13px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+}
+
+.dash-user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.dash-user-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dash-user-sub {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: #0284c7;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* GUEST BUTTONS */
+.dash-guest-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-guest-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  min-height: 36px;
+}
+
+.dash-guest-link:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.dash-guest-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 16px;
+  border-radius: 8px;
+  background: #0284c7;
+  color: white;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+  min-height: 36px;
+}
+
+.dash-guest-btn:hover {
+  background: #0369a1;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 900px) {
+  .dash-menu-toggle-btn {
+    display: inline-flex;
+  }
+
+  .dash-status-pill {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .dash-glass-topbar {
+    height: 66px;
+    padding: 0 14px;
+  }
+
+  .dash-breadcrumbs {
+    display: none;
+  }
+
+  .dash-action-btn span {
+    display: none;
+  }
+
+  .dash-action-btn {
+    padding: 8px 12px;
+  }
+
+  .dash-user-meta {
+    display: none;
+  }
+}
+
+
+
+/* OFFICER / ADMIN PORTAL LINK IN TOPBAR */
+.dash-admin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.28);
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dash-admin-link:hover {
+  background: rgba(239, 68, 68, 0.16);
+  border-color: #ef4444;
+  color: #b91c1c;
+  transform: translateY(-1px);
+}
+
+.dash-admin-link:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 640px) {
+  .dash-admin-link span {
+    display: none;
+  }
+  .dash-admin-link {
+    padding: 7px 10px;
+  }
+}

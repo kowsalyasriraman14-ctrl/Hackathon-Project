@@ -1,0 +1,1378 @@
+{
+  "users": [
+    {
+      "_id": "usr-1793480492881",
+      "name": "Kowsalya S",
+      "email": "kowsalya1793480492549@example.com",
+      "password": "$2b$10$TWxxMt72ETDsfXHHQA.OCeyA.p.3Rr62jYO306SBAzX8.LjBhT2xa",
+      "phone": "+91 98765 43210",
+      "role": "citizen",
+      "createdAt": "2026-10-31T21:01:32.881Z"
+    },
+    {
+      "_id": "usr-1793482539997",
+      "name": "kowsi",
+      "email": "kowsalyasriraman14@gmail.com",
+      "password": "$2b$10$db82Ogy9hk9Gqr0Y/bWr.e2Pu7XXtHMAHUIJ4hk2ZTUNncAmx2lSG",
+      "phone": "9876543210",
+      "role": "citizen",
+      "createdAt": "2026-10-31T21:35:39.997Z"
+    },
+    {
+      "_id": "usr-1793485367485",
+      "name": "meena",
+      "email": "meena12@gmail.com",
+      "password": "$2b$10$3.ytPV7H58CJ6aPPa54LruSv45fUwcSfFSIlDx03zKyfw9w7hTD2W",
+      "phone": "6382687404",
+      "role": "citizen",
+      "createdAt": "2026-10-31T22:22:47.485Z"
+    },
+    {
+      "_id": "adm-test-1793489750066",
+      "name": "Commissioner M. Sekhar",
+      "email": "sekhar@civicshield.gov.in",
+      "password": "$2b$10$Y5c9XhW5ws4uq.jwe7lvNOzBnvRgUCy50fQN6roFmz60O9LKln33.",
+      "phone": "+91 94431 87654",
+      "department": "Municipal Administration",
+      "role": "admin",
+      "createdAt": "2026-10-31T23:35:50.066Z"
+    },
+    {
+      "_id": "usr-1793491417859",
+      "name": "nikitha",
+      "email": "nikitha12@gmail.com",
+      "password": "$2b$10$LbseJemiGZEDV2RKnx2OE.Uf.OnyHV8XfF1OucC6AjbXpOOu7NQaW",
+      "phone": "9876543210",
+      "role": "citizen",
+      "createdAt": "2026-11-01T00:03:37.859Z"
+    },
+    {
+      "_id": "adm-1793493258717",
+      "name": "pooja",
+      "email": "pooja@gmail.com",
+      "password": "$2b$10$DoLRE38MPz4v.w3//LUKAufSv5.QjjWxgvCE0PTvVqSo1kkDll2Yi",
+      "phone": "9876543210",
+      "department": "Municipal Administration",
+      "role": "admin",
+      "createdAt": "2026-11-01T00:34:18.717Z"
+    },
+    {
+      "_id": "adm-root-1",
+      "name": "Municipal Commissioner (TN HQ)",
+      "email": "admin@civicshield.gov.in",
+      "password": "$2b$10$hK65/p5lR2BBuSLW4iHsFOrthfiuxqzzapBiY6ULFx24TroJyPe5W",
+      "phone": "+91 94440 12345",
+      "department": "Tamil Nadu Municipal Administration",
+      "role": "admin",
+      "createdAt": "2026-11-01T01:28:51.797Z"
+    },
+    {
+      "_id": "sup-root-1",
+      "name": "Chief Secretary (Civic Oversight)",
+      "email": "superadmin@civicshield.gov.in",
+      "password": "$2b$10$wDPYA7cV.6HLfeSddEX/wu4Ok08lumOciqgUfaO8C8tR48uR0LFfW",
+      "phone": "+91 94440 00001",
+      "department": "Apex Municipal Surveillance & Governance",
+      "role": "superadmin",
+      "createdAt": "2026-11-01T01:28:52.267Z"
+    }
+  ],
+  "complaints": [
+    {
+      "trackingId": "CSC75975",
+      "title": "Major water pipeline rupture flooding South Mada Street",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Resolved",
+      "description": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Declared Location, Salem",
+        "latitude": null,
+        "longitude": null,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "Main potable water feeder குழாய் cracked near South Mada street. Water is gushing onto the சாலை causing சாலை collapse.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+          "audioProcessed": false,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "UNVERIFIED_TEXT_ONLY",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 65,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [N/A, N/A] is consistent with reported address. Authenticity confidence: 78%.",
+          "verifiedAt": "2026-11-01T01:35:39.133Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T01:35:39.133Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-11-01T01:35:39.133Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T01:35:39.133Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T01:35:39.133Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Status: In Progress",
+          "detail": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+          "date": "2026-11-01T01:35:39.335Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "Status: Resolved",
+          "detail": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+          "date": "2026-11-01T01:35:39.343Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-11-01T01:35:39.133Z",
+      "updatedAt": "2026-11-01T01:35:39.133Z",
+      "_id": "comp-1793496939134",
+      "adminResponse": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "adminRespondedAt": "2026-11-01T01:35:39.343Z",
+      "assignedOfficer": "Er. Ramesh Babu (MetroWater AE)"
+    },
+    {
+      "trackingId": "CSC23899",
+      "title": "Major water pipeline rupture flooding South Mada Street",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Resolved",
+      "description": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Declared Location, Salem",
+        "latitude": null,
+        "longitude": null,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "Main potable water feeder குழாய் cracked near South Mada street. Water is gushing onto the சாலை causing சாலை collapse.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+          "audioProcessed": false,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "UNVERIFIED_TEXT_ONLY",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 65,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [N/A, N/A] is consistent with reported address. Authenticity confidence: 78%.",
+          "verifiedAt": "2026-11-01T01:32:26.454Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T01:32:26.454Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-11-01T01:32:26.454Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T01:32:26.454Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T01:32:26.454Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Status: In Progress",
+          "detail": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+          "date": "2026-11-01T01:32:26.592Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "Status: Resolved",
+          "detail": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+          "date": "2026-11-01T01:32:26.599Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "Super Admin Executive Override: Resolved",
+          "detail": "Executive review and intervention conducted by Chief Secretary.",
+          "date": "2026-11-01T01:32:26.726Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-11-01T01:32:26.454Z",
+      "updatedAt": "2026-11-01T01:32:26.454Z",
+      "_id": "comp-1793496746456",
+      "adminResponse": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "adminRespondedAt": "2026-11-01T01:32:26.599Z",
+      "assignedOfficer": "Er. Ramesh Babu (MetroWater AE)"
+    },
+    {
+      "trackingId": "CSC54781",
+      "title": "Major water pipeline rupture flooding South Mada Street",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Pending",
+      "description": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Declared Location, Salem",
+        "latitude": null,
+        "longitude": null,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "Main potable water feeder குழாய் cracked near South Mada street. Water is gushing onto the சாலை causing சாலை collapse.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+          "audioProcessed": false,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "UNVERIFIED_TEXT_ONLY",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 65,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [N/A, N/A] is consistent with reported address. Authenticity confidence: 78%.",
+          "verifiedAt": "2026-11-01T01:28:51.543Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T01:28:51.543Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-11-01T01:28:51.543Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T01:28:51.543Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T01:28:51.543Z",
+          "done": false,
+          "current": false
+        }
+      ],
+      "createdAt": "2026-11-01T01:28:51.543Z",
+      "updatedAt": "2026-11-01T01:28:51.543Z",
+      "_id": "comp-1793496531544"
+    },
+    {
+      "trackingId": "CSC24863",
+      "title": "Major water pipeline rupture flooding South Mada Street",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Pending",
+      "description": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Declared Location, Salem",
+        "latitude": null,
+        "longitude": null,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "Main potable water feeder குழாய் cracked near South Mada street. Water is gushing onto the சாலை causing சாலை collapse.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Main potable water feeder pipe cracked near South Mada street. Water is gushing onto the road causing road collapse.",
+          "audioProcessed": false,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "UNVERIFIED_TEXT_ONLY",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 65,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [N/A, N/A] is consistent with reported address. Authenticity confidence: 78%.",
+          "verifiedAt": "2026-11-01T01:27:15.157Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T01:27:15.159Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-11-01T01:27:15.159Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T01:27:15.159Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T01:27:15.159Z",
+          "done": false,
+          "current": false
+        }
+      ],
+      "createdAt": "2026-11-01T01:27:15.159Z",
+      "updatedAt": "2026-11-01T01:27:15.159Z",
+      "_id": "comp-1793496435160"
+    },
+    {
+      "trackingId": "CSC38685",
+      "title": "Roads & Transport Complaint - Salem, Tamil Nadu",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Pending",
+      "description": "tmb nagar . mettur, salem.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Near Fairlands Main Road, Salem (GPS: 10.94013, 78.08418)",
+        "latitude": 10.940125,
+        "longitude": 78.084183,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [
+          {
+            "url": "http://localhost:5000/uploads/images/images-1793493479333-654458689.png",
+            "filename": "images-1793493479333-654458689.png",
+            "mimetype": "image/png",
+            "size": 1683243,
+            "uploadedAt": "2026-11-01T00:37:59.409Z"
+          }
+        ],
+        "videos": [
+          {
+            "url": "http://localhost:5000/uploads/videos/video-1793493479383-883173854.mp4",
+            "filename": "video-1793493479383-883173854.mp4",
+            "mimetype": "video/mp4",
+            "size": 747455,
+            "durationSeconds": 25,
+            "uploadedAt": "2026-11-01T00:37:59.409Z"
+          }
+        ],
+        "audio": [
+          {
+            "url": "http://localhost:5000/uploads/audio/audio-1793493479397-467778587.webm",
+            "filename": "audio-1793493479397-467778587.webm",
+            "mimetype": "audio/webm",
+            "size": 99979,
+            "uploadedAt": "2026-11-01T00:37:59.409Z"
+          }
+        ]
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "எங்க வீட்ல இன்னும் கரண்ட் வரல  போட்டு விடுங்க",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Civic grievance reported: \"எங்க வீட்ல இன்னும் கரண்ட் வரல  போட்டு விடுங்க\". Immediate municipal inspection and repair requested.",
+          "audioProcessed": true,
+          "audioUrl": "http://localhost:5000/uploads/audio/audio-1793493479397-467778587.webm",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 96,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "aiGeneratedProbability": 0.02,
+          "isManipulated": false,
+          "locationConsistencyScore": 96,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [10.940125, 78.084183] is consistent with reported address. Authenticity confidence: 96%.",
+          "verifiedAt": "2026-11-01T00:37:59.412Z",
+          "mediaProcessed": {
+            "imageCount": 1,
+            "videoCount": 1
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T00:37:59.413Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 96% authenticity score.",
+          "date": "2026-11-01T00:37:59.413Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T00:37:59.413Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T00:37:59.413Z",
+          "done": false,
+          "current": false
+        }
+      ],
+      "createdAt": "2026-11-01T00:37:59.413Z",
+      "updatedAt": "2026-11-01T00:37:59.413Z",
+      "_id": "comp-1793493479414"
+    },
+    {
+      "trackingId": "CSC79076",
+      "title": "Severe Water Pipe Burst at Fort Main Road",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "In Progress",
+      "description": "Drinking water pipeline ruptured near Fort Clock Tower, water flooding the street.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Fort Main Road, Ward 14, Salem",
+        "latitude": 11.6643,
+        "longitude": 78.146,
+        "landmark": "",
+        "city": "Salem",
+        "pincode": "636001"
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "Drinking water pipeline ruptured near Fort Clock Tower, water flooding the street.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Drinking water pipeline ruptured near Fort Clock Tower, water flooding the street.",
+          "audioProcessed": false,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "DUPLICATE",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 96,
+          "duplicateDetected": true,
+          "duplicateOf": "CSC73234",
+          "analysisSummary": "TruthLens Warning: Duplicate issue detected within 300m of prior complaint (CSC73234). Clustered for unified municipal response.",
+          "verifiedAt": "2026-11-01T00:22:34.196Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-11-01T00:22:34.196Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-11-01T00:22:34.196Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-11-01T00:22:34.196Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-11-01T00:22:34.196Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Status: In Progress",
+          "detail": "TWAD emergency repair crew dispatched to Fort Main Road with excavation machinery.",
+          "date": "2026-11-01T00:22:34.219Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-11-01T00:22:34.196Z",
+      "updatedAt": "2026-11-01T00:22:34.196Z",
+      "_id": "comp-1793492554196",
+      "adminResponse": "TWAD emergency repair crew dispatched to Fort Main Road with excavation machinery.",
+      "adminRespondedAt": "2026-11-01T00:22:34.219Z",
+      "assignedOfficer": "K. Senthil Nathan (Executive Engineer, TWAD)"
+    },
+    {
+      "_id": "comp-test-1793489750074",
+      "trackingId": "CSC11542",
+      "title": "Burst drinking water pipeline at 4-Roads Junction",
+      "description": "High-pressure clean water leaking onto main road causing traffic bottleneck and water loss.",
+      "category": "Water Supply",
+      "department": "TWAD & City Water Board",
+      "priority": "High",
+      "status": "In Progress",
+      "citizen": {
+        "name": "Sriraman K.",
+        "email": "citizen.sriraman@gmail.com",
+        "phone": "+91 98401 54321"
+      },
+      "location": {
+        "address": "4-Roads Junction, Omalur Main Road, Salem",
+        "latitude": 11.6643,
+        "longitude": 78.146,
+        "city": "Salem, Tamil Nadu"
+      },
+      "media": {
+        "images": [
+          {
+            "url": "http://localhost:5000/uploads/images/sample-water.jpg"
+          }
+        ],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "4-ரோட்ஸ் சந்திப்பில் குடிநீர் குழாய் உடைந்து தண்ணீர் வீணாகிறது.",
+          "translatedEnglish": "Drinking water pipe burst at 4-Roads junction, water being wasted.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)"
+        },
+        "truthlens": {
+          "authenticityScore": 97,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "analysisSummary": "Genuine photo capture verified via sensor metadata."
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Registered",
+          "detail": "Submitted by citizen via CivicShield AI portal.",
+          "date": "2026-10-31T23:35:50.074Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "Status: In Progress",
+          "detail": "TWAD emergency repair team dispatched under Work Order #TWAD-2026-904.",
+          "date": "2026-10-31T23:35:50.080Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "adminResponse": "TWAD emergency repair team dispatched under Work Order #TWAD-2026-904.",
+      "assignedOfficer": "Eng. P. Murugan (Ward 12 Lead)",
+      "createdAt": "2026-10-31T23:35:50.074Z",
+      "updatedAt": "2026-10-31T23:35:50.074Z",
+      "adminRespondedAt": "2026-10-31T23:35:50.080Z"
+    },
+    {
+      "trackingId": "CSC73234",
+      "title": "Salem Main Road Deep Pothole",
+      "category": "Roads & Transport",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "High",
+      "status": "Received",
+      "description": "Severe pothole causing vehicle damage near Salem 4-roads.",
+      "citizen": {
+        "userId": null,
+        "name": "Citizen User",
+        "email": "",
+        "phone": ""
+      },
+      "location": {
+        "address": "Salem 4-Roads Junction, Salem, Tamil Nadu",
+        "latitude": 11.6643,
+        "longitude": 78.146,
+        "landmark": "",
+        "city": "Salem, Tamil Nadu",
+        "pincode": ""
+      },
+      "media": {
+        "images": [],
+        "videos": [],
+        "audio": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "சேலம் நான்கு ரோடு சந்திப்பில் பெரிய பள்ளம் ஏற்பட்டுள்ளது.",
+          "detectedLanguage": "ta-IN",
+          "languageName": "Tamil (தமிழ்)",
+          "translatedEnglish": "Severe pothole has formed at Salem 4-Roads junction.",
+          "audioProcessed": true,
+          "audioUrl": "",
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe"
+        },
+        "truthlens": {
+          "authenticityScore": 78,
+          "verdict": "UNVERIFIED_TEXT_ONLY",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 96,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical metadata matches genuine camera capture. Location [11.6643, 78.146] is consistent with reported address. Authenticity confidence: 78%.",
+          "verifiedAt": "2026-10-31T22:14:45.185Z",
+          "mediaProcessed": {
+            "imageCount": 0,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Successfully registered in CivicShield AI system.",
+          "date": "2026-10-31T22:14:45.185Z",
+          "done": true,
+          "current": true
+        },
+        {
+          "title": "TruthLens Verification",
+          "detail": "Evidence integrity analyzed: 78% authenticity score.",
+          "date": "2026-10-31T22:14:45.185Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Department Routing",
+          "detail": "Automated routing to Highways & Road Maintenance Department.",
+          "date": "2026-10-31T22:14:45.185Z",
+          "done": false,
+          "current": false
+        },
+        {
+          "title": "Resolution in Progress",
+          "detail": "Inspection and field repair execution.",
+          "date": "2026-10-31T22:14:45.185Z",
+          "done": false,
+          "current": false
+        }
+      ],
+      "createdAt": "2026-10-31T22:14:45.185Z",
+      "updatedAt": "2026-10-31T22:14:45.185Z",
+      "_id": "comp-1793484885186"
+    },
+    {
+      "_id": "comp-tn-slm-48102",
+      "trackingId": "CSC48102",
+      "title": "Fairlands Main Road Asphalt Cave-in and Deep Potholes",
+      "category": "Roads & Transport",
+      "description": "ஃபேர்லான்ட்ஸ் பேருந்து நிறுத்தம் அருகில் தார் ரோடு மிக மோசமாக சேதமடைந்து பெரிய பள்ளம் ஏற்பட்டுள்ளது, வாகனங்கள் விபத்துக்குள்ளாகின்றன. உடனடியாக தார் பூசி சீரமைக்க வேண்டும்.",
+      "department": "Highways & Road Maintenance Department",
+      "priority": "Urgent",
+      "status": "In Progress",
+      "citizen": {
+        "userId": "usr-citizen-01",
+        "name": "Sriraman K",
+        "email": "citizen.salem@civicshield.tn.gov.in",
+        "phone": "+91 94432 18901"
+      },
+      "location": {
+        "address": "Fairlands Main Road, Near Reliance Fresh, Ward 12, Salem, Tamil Nadu",
+        "latitude": 11.6841,
+        "longitude": 78.1462,
+        "landmark": "Near Reliance Fresh & Bus Stop",
+        "city": "Salem, Tamil Nadu",
+        "pincode": "636016"
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=1200&auto=format&fit=crop",
+            "filename": "fairlands-pothole-01.jpg",
+            "mimetype": "image/jpeg",
+            "size": 2450000,
+            "uploadedAt": "2026-10-30T09:15:00.000Z"
+          }
+        ],
+        "videos": [
+          {
+            "url": "/video/civicshield-city.mp4.mp4.mp4",
+            "filename": "road-inspection-evidence.mp4",
+            "mimetype": "video/mp4",
+            "size": 14200000,
+            "durationSeconds": 24,
+            "uploadedAt": "2026-10-30T09:15:00.000Z"
+          }
+        ]
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "ஃபேர்லான்ட்ஸ் பேருந்து நிறுத்தம் அருகில் தார் ரோடு மிக மோசமாக சேதமடைந்து பெரிய பள்ளம் ஏற்பட்டுள்ளது, வாகனங்கள் விபத்துக்குள்ளாகின்றன.",
+          "detectedLanguage": "ta-IN",
+          "translatedEnglish": "Severe asphalt road degradation and hazardous deep potholes near Fairlands bus stop causing commuter risk and vehicle damage. Immediate resurfacing required.",
+          "audioProcessed": true,
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe",
+          "tanglishInputDetected": "Road romba damage aayirukku bus stop kitta periya pothole irukku"
+        },
+        "truthlens": {
+          "authenticityScore": 97,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "aiGeneratedProbability": 0.01,
+          "isManipulated": false,
+          "locationConsistencyScore": 98,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical sensor Bayer CFA pattern authentic. GPS coordinates [11.6841, 78.1462] strictly match Fairlands Ward 12. No AI synthesis or deepfake artifacts.",
+          "verifiedAt": "2026-10-30T09:15:45.000Z",
+          "mediaProcessed": {
+            "imageCount": 1,
+            "videoCount": 1
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Registered & Digitized",
+          "detail": "Grievance received via CivicShield AI mobile portal with geotagged media.",
+          "date": "2026-10-30T09:15:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "TruthLens™ Forensic Audit Passed",
+          "detail": "Optical integrity score: 97%. Video duration 24s verified. Zero metadata tampering detected.",
+          "date": "2026-10-30T09:16:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Dispatched to Highways Division",
+          "detail": "Automated routing to Salem District Highways & Road Maintenance Engineering Cell.",
+          "date": "2026-10-30T10:30:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Field Repair Operations in Progress",
+          "detail": "Road asphalt roller crew deployed on Fairlands Main Road. Asphalt infill underway.",
+          "date": "2026-10-31T08:00:00.000Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-10-30T09:15:00.000Z",
+      "updatedAt": "2026-10-31T08:00:00.000Z"
+    },
+    {
+      "_id": "comp-tn-slm-39211",
+      "trackingId": "CSC39211",
+      "title": "Major Potable Water Pipeline Breach & Supply Disruption",
+      "category": "Water Supply",
+      "description": "செவ்வாய்ப்பேட்டை மார்க்கெட் பிரதான குடிநீர் குழாயில் விரிசல் ஏற்பட்டு தூய குடிநீர் வீணாகிறது, எங்கள் பகுதிக்கு 3 நாட்களாக குடிநீர் வரவில்லை.",
+      "department": "Tamil Nadu Water Supply & Drainage Board (TWAD)",
+      "priority": "High",
+      "status": "Under Review",
+      "citizen": {
+        "userId": "usr-citizen-02",
+        "name": "Meenakshi Sundaram",
+        "email": "meenakshi.s@gmail.com",
+        "phone": "+91 98421 77210"
+      },
+      "location": {
+        "address": "Bazaar Street, Opposite City Union Bank, Shevapet, Salem, Tamil Nadu",
+        "latitude": 11.6521,
+        "longitude": 78.1408,
+        "landmark": "Opposite City Union Bank",
+        "city": "Salem, Tamil Nadu",
+        "pincode": "636002"
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?w=1200&auto=format&fit=crop",
+            "filename": "shevapet-water-burst.jpg",
+            "mimetype": "image/jpeg",
+            "size": 1980000,
+            "uploadedAt": "2026-10-31T07:20:00.000Z"
+          }
+        ],
+        "videos": [
+          {
+            "url": "/video/civicshield-city.mp4.mp4.mp4",
+            "filename": "water-pipe-leak-22s.mp4",
+            "mimetype": "video/mp4",
+            "size": 16500000,
+            "durationSeconds": 22,
+            "uploadedAt": "2026-10-31T07:20:00.000Z"
+          }
+        ]
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "செவ்வாய்ப்பேட்டை மார்க்கெட் பிரதான குடிநீர் குழாயில் விரிசல் ஏற்பட்டு தூய குடிநீர் வீணாகிறது, எங்கள் பகுதிக்கு 3 நாட்களாக குடிநீர் வரவில்லை.",
+          "detectedLanguage": "ta-IN",
+          "translatedEnglish": "Severe potable water distribution pipeline breach resulting in continuous water wastage and local supply disruption across ward. Urgent pipe replacement required.",
+          "audioProcessed": true,
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe",
+          "tanglishInputDetected": "Water supply 3 days-ah varala main pipe leak aagi road-la odudhu"
+        },
+        "truthlens": {
+          "authenticityScore": 94,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "aiGeneratedProbability": 0.02,
+          "isManipulated": false,
+          "locationConsistencyScore": 96,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Dynamic fluid motion verified via 22s video analysis. Coordinates [11.6521, 78.1408] correspond with municipal water network map.",
+          "verifiedAt": "2026-10-31T07:20:50.000Z",
+          "mediaProcessed": {
+            "imageCount": 1,
+            "videoCount": 1
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Complaint Received",
+          "detail": "Registered with 22-second video documentation and Sarvam AI voice recording.",
+          "date": "2026-10-31T07:20:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "TruthLens Verification Approved",
+          "detail": "Authenticity confidence score 94%. Video and optical checks confirmed genuine.",
+          "date": "2026-10-31T07:21:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Under TWAD Technical Review",
+          "detail": "Pipeline pressure valve schematics pulled by municipal engineering team for shutoff.",
+          "date": "2026-10-31T08:15:00.000Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-10-31T07:20:00.000Z",
+      "updatedAt": "2026-10-31T08:15:00.000Z"
+    },
+    {
+      "_id": "comp-tn-slm-71045",
+      "trackingId": "CSC71045",
+      "title": "Sparking Distribution Transformer & Sagging Live Cables",
+      "category": "Electricity",
+      "description": "ஹஸ்தம்பட்டி பகுதியில் உள்ள டிரான்ஸ்பார்மரில் தீப்பொறி பறந்து மின்கம்பிகள் ஆபத்தான முறையில் தொங்குகின்றன, உடனே சரிசெய்ய வேண்டும்.",
+      "department": "TANGEDCO Electricity Board",
+      "priority": "Urgent",
+      "status": "Resolved",
+      "citizen": {
+        "userId": "usr-citizen-03",
+        "name": "Anand Raj",
+        "email": "anand.salem@outlook.com",
+        "phone": "+91 97910 88321"
+      },
+      "location": {
+        "address": "Junction Main Road, Hasthampatti Roundana, Salem, Tamil Nadu",
+        "latitude": 11.6738,
+        "longitude": 78.1584,
+        "landmark": "Near Hasthampatti Roundana & Bus Stop",
+        "city": "Salem, Tamil Nadu",
+        "pincode": "636007"
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&auto=format&fit=crop",
+            "filename": "transformer-hasthampatti.jpg",
+            "mimetype": "image/jpeg",
+            "size": 2100000,
+            "uploadedAt": "2026-10-29T14:10:00.000Z"
+          }
+        ],
+        "videos": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "ஹஸ்தம்பட்டி பகுதியில் உள்ள டிரான்ஸ்பார்மரில் தீப்பொறி பறந்து மின்கம்பிகள் ஆபத்தான முறையில் தொங்குகின்றன, உடனே சரிசெய்ய வேண்டும்.",
+          "detectedLanguage": "ta-IN",
+          "translatedEnglish": "High-voltage distribution transformer sparking with sagging live electrical feeder cables. Critical public safety emergency requiring immediate grid disconnection.",
+          "audioProcessed": true,
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe",
+          "tanglishInputDetected": "Current cut aayidichu transformer-la spark varudhu eb wire hanging"
+        },
+        "truthlens": {
+          "authenticityScore": 98,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "aiGeneratedProbability": 0.01,
+          "isManipulated": false,
+          "locationConsistencyScore": 99,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Real camera sensor metadata. Extreme danger flag triggered for TANGEDCO emergency grid triage.",
+          "verifiedAt": "2026-10-29T14:10:45.000Z",
+          "mediaProcessed": {
+            "imageCount": 1,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Emergency Alert Logged",
+          "detail": "Urgent electricity hazard registered.",
+          "date": "2026-10-29T14:10:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "TANGEDCO Grid Isolation",
+          "detail": "Hasthampatti feeder line remotely tripped to prevent short-circuit fire.",
+          "date": "2026-10-29T14:35:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Field Crew Repair Completed",
+          "detail": "Overhead insulator replaced, line tensioning recalibrated, power safely restored.",
+          "date": "2026-10-29T17:40:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Resolved & Inspected",
+          "detail": "Municipal electrical safety inspector sign-off completed.",
+          "date": "2026-10-30T09:00:00.000Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-10-29T14:10:00.000Z",
+      "updatedAt": "2026-10-30T09:00:00.000Z"
+    },
+    {
+      "_id": "comp-tn-slm-55420",
+      "trackingId": "CSC55420",
+      "title": "Solid Waste Accumulation and Storm Drain Blockage",
+      "category": "Sanitation & Waste",
+      "description": "சூரமங்கலம் பிரதான சாலையில் குப்பைகள் பல நாட்களாக அள்ளப்படாமல் மலைபோல் குவிந்து துர்நாற்றம் வீசுகிறது, சாக்கடை அடைப்பு ஏற்பட்டுள்ளது.",
+      "department": "City Solid Waste Management Department",
+      "priority": "Medium",
+      "status": "In Progress",
+      "citizen": {
+        "userId": "usr-citizen-04",
+        "name": "Ramesh Kannan",
+        "email": "ramesh.k@gmail.com",
+        "phone": "+91 94870 12345"
+      },
+      "location": {
+        "address": "Suramangalam Market Road, Near Railway Colony, Salem, Tamil Nadu",
+        "latitude": 11.6912,
+        "longitude": 78.1215,
+        "landmark": "Near Railway Colony Entrance",
+        "city": "Salem, Tamil Nadu",
+        "pincode": "636005"
+      },
+      "media": {
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1200&auto=format&fit=crop",
+            "filename": "suramangalam-waste.jpg",
+            "mimetype": "image/jpeg",
+            "size": 1850000,
+            "uploadedAt": "2026-10-31T06:10:00.000Z"
+          }
+        ],
+        "videos": []
+      },
+      "aiAnalysis": {
+        "sarvam": {
+          "transcription": "சூரமங்கலம் பிரதான சாலையில் குப்பைகள் பல நாட்களாக அள்ளப்படாமல் மலைபோல் குவிந்து துர்நாற்றம் வீசுகிறது, சாக்கடை அடைப்பு ஏற்பட்டுள்ளது.",
+          "detectedLanguage": "ta-IN",
+          "translatedEnglish": "Chronic municipal solid waste accumulation and uncollected dumper bins causing severe foul odor and hygiene hazards. Immediate sanitization dispatch requested.",
+          "audioProcessed": true,
+          "speechModel": "sarvam-saaras:v4",
+          "mode": "transcribe",
+          "tanglishInputDetected": "Garbage pile aagi romba smell varudhu municipal sanitation clean panla"
+        },
+        "truthlens": {
+          "authenticityScore": 92,
+          "verdict": "VERIFIED_AUTHENTIC",
+          "aiGeneratedProbability": 0.03,
+          "isManipulated": false,
+          "locationConsistencyScore": 95,
+          "duplicateDetected": false,
+          "duplicateOf": null,
+          "analysisSummary": "TruthLens Verified: Optical texture analysis confirms uncollected municipal bio-waste. Location verified.",
+          "verifiedAt": "2026-10-31T06:10:35.000Z",
+          "mediaProcessed": {
+            "imageCount": 1,
+            "videoCount": 0
+          }
+        }
+      },
+      "timeline": [
+        {
+          "title": "Sanitation Report Filed",
+          "detail": "Registered by Ward 5 resident.",
+          "date": "2026-10-31T06:10:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "TruthLens Integrity Clearance",
+          "detail": "Photographic evidence validated without duplicates.",
+          "date": "2026-10-31T06:11:00.000Z",
+          "done": true,
+          "current": false
+        },
+        {
+          "title": "Sanitation Compactor Dispatched",
+          "detail": "Municipal compactor truck and sanitary workers en route to Suramangalam Market Road.",
+          "date": "2026-10-31T08:30:00.000Z",
+          "done": true,
+          "current": true
+        }
+      ],
+      "createdAt": "2026-10-31T06:10:00.000Z",
+      "updatedAt": "2026-10-31T08:30:00.000Z"
+    }
+  ],
+  "adminActions": [
+    {
+      "id": "act-super-1793497369692",
+      "complaintId": "CSC24627",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Chief Secretary (Super Admin)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Reviewed",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Site inspected and verified by State Vigilance Directorate. Road surface repaved.",
+      "isSuperAdminOverride": true,
+      "timestamp": "2026-11-01T01:42:49.692Z"
+    },
+    {
+      "id": "act-1793497369150",
+      "complaintId": "CSC24627",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "In Progress",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "timestamp": "2026-11-01T01:42:49.150Z"
+    },
+    {
+      "id": "act-1793497369053",
+      "complaintId": "CSC24627",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Pending",
+      "newStatus": "In Progress",
+      "isCompleted": false,
+      "isPending": true,
+      "responseNote": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+      "timestamp": "2026-11-01T01:42:49.053Z"
+    },
+    {
+      "id": "act-1793497287017",
+      "complaintId": "CSC32290",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "In Progress",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "timestamp": "2026-11-01T01:41:27.017Z"
+    },
+    {
+      "id": "act-1793497286889",
+      "complaintId": "CSC32290",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Pending",
+      "newStatus": "In Progress",
+      "isCompleted": false,
+      "isPending": true,
+      "responseNote": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+      "timestamp": "2026-11-01T01:41:26.889Z"
+    },
+    {
+      "id": "act-1793497230294",
+      "complaintId": "CSC39327",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "In Progress",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "timestamp": "2026-11-01T01:40:30.294Z"
+    },
+    {
+      "id": "act-1793497230204",
+      "complaintId": "CSC39327",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Pending",
+      "newStatus": "In Progress",
+      "isCompleted": false,
+      "isPending": true,
+      "responseNote": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+      "timestamp": "2026-11-01T01:40:30.204Z"
+    },
+    {
+      "id": "act-1793496939345",
+      "complaintId": "CSC75975",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "In Progress",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "timestamp": "2026-11-01T01:35:39.345Z"
+    },
+    {
+      "id": "act-1793496939337",
+      "complaintId": "CSC75975",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Pending",
+      "newStatus": "In Progress",
+      "isCompleted": false,
+      "isPending": true,
+      "responseNote": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+      "timestamp": "2026-11-01T01:35:39.337Z"
+    },
+    {
+      "id": "act-super-1793496746728",
+      "complaintId": "CSC23899",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Chief Secretary (Super Admin)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Reviewed",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "",
+      "isSuperAdminOverride": true,
+      "timestamp": "2026-11-01T01:32:26.728Z"
+    },
+    {
+      "id": "act-1793496746600",
+      "complaintId": "CSC23899",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "In Progress",
+      "newStatus": "Resolved",
+      "isCompleted": true,
+      "isPending": false,
+      "responseNote": "Replacement 300mm ductile iron sleeve installed and pressure tested at 4.2 bar. Water supply restored.",
+      "timestamp": "2026-11-01T01:32:26.600Z"
+    },
+    {
+      "id": "act-1793496746594",
+      "complaintId": "CSC23899",
+      "complaintTitle": "Major water pipeline rupture flooding South Mada Street",
+      "officerName": "Er. Ramesh Babu (MetroWater AE)",
+      "department": "Highways & Road Maintenance Department",
+      "previousStatus": "Pending",
+      "newStatus": "In Progress",
+      "isCompleted": false,
+      "isPending": true,
+      "responseNote": "MetroWater emergency repair van dispatched. Isolation valves 3 and 4 closed to stop flooding.",
+      "timestamp": "2026-11-01T01:32:26.594Z"
+    }
+  ]
+}
