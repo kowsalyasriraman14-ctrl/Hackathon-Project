@@ -12,6 +12,12 @@ export function getApiBaseUrl() {
       return "http://192.168.1.2:5000";
     }
   }
+
+  // Deployed production environment variable (e.g. on Vercel)
+  if (typeof import.meta !== "undefined" && import.meta.env && import.meta.env.VITE_API_URL) {
+    return import.meta.env.VITE_API_URL.replace(/\/$/, "");
+  }
+
   return "http://localhost:5000";
 }
 
@@ -21,9 +27,10 @@ export function setCustomApiBaseUrl(url) {
   } else {
     localStorage.removeItem("civicshield_api_base");
   }
+  API_BASE_URL = getApiBaseUrl();
 }
 
-export const API_BASE_URL = getApiBaseUrl();
+export let API_BASE_URL = getApiBaseUrl();
 
 /**
  * Get stored auth token

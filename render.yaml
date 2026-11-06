@@ -1,0 +1,22 @@
+services:
+  # CivicShield AI Backend (Node.js + Express)
+  - type: web
+    name: civicshield-backend
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        value: mongodb+srv://kowsalyasriraman14_db_user:pOcJCKNw6H7xPaxJ@cluster0.qfder0r.mongodb.net/civicshield?retryWrites=true&w=majority
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SARVAM_API_KEY
+        sync: false
